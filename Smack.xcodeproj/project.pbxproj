@@ -16,6 +16,7 @@
 		F0C7FE5423E1FAB3007DA756 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C7FE5323E1FAB3007DA756 /* ChatVC.swift */; };
 		F0C7FE5623E1FACF007DA756 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C7FE5523E1FACF007DA756 /* ChannelVC.swift */; };
 		F0C7FE5823E225F1007DA756 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C7FE5723E225F1007DA756 /* GradientView.swift */; };
+		F0C7FE5A23E25CF0007DA756 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C7FE5923E25CF0007DA756 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F0C7FE5323E1FAB3007DA756 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		F0C7FE5523E1FACF007DA756 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		F0C7FE5723E225F1007DA756 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		F0C7FE5923E25CF0007DA756 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				F0C7FE5323E1FAB3007DA756 /* ChatVC.swift */,
 				F0C7FE5523E1FACF007DA756 /* ChannelVC.swift */,
+				F0C7FE5923E25CF0007DA756 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				F0C7FE5623E1FACF007DA756 /* ChannelVC.swift in Sources */,
 				F0C7FE5423E1FAB3007DA756 /* ChatVC.swift in Sources */,
+				F0C7FE5A23E25CF0007DA756 /* LoginVC.swift in Sources */,
 				F0C7FE5823E225F1007DA756 /* GradientView.swift in Sources */,
 				F0C7FE3A23E1EC9B007DA756 /* AppDelegate.swift in Sources */,
 				F0C7FE4F23E1F4AA007DA756 /* SWRevealViewController.m in Sources */,
