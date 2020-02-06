@@ -21,6 +21,7 @@
 		F0C7FE5C23E25F4E007DA756 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C7FE5B23E25F4E007DA756 /* CreateAccountVC.swift */; };
 		F0E5586023EAE0F700679084 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5585F23EAE0F700679084 /* AvatarPickerVC.swift */; };
 		F0E5586223EAE7F700679084 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5586123EAE7F700679084 /* AvatarCell.swift */; };
+		F0E5586423EB148000679084 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5586323EB148000679084 /* CircleImage.swift */; };
 		F0EDE2BB23E8849B00C79B17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EDE2BA23E8849B00C79B17 /* Constants.swift */; };
 		F0EDE2BE23E884D700C79B17 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EDE2BD23E884D700C79B17 /* AuthService.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		F0C7FE5B23E25F4E007DA756 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		F0E5585F23EAE0F700679084 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		F0E5586123EAE7F700679084 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		F0E5586323EB148000679084 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		F0EDE2BA23E8849B00C79B17 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F0EDE2BD23E884D700C79B17 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 			children = (
 				F0C7FE5723E225F1007DA756 /* GradientView.swift */,
 				F0E5586123EAE7F700679084 /* AvatarCell.swift */,
+				F0E5586323EB148000679084 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				F0C7FE5623E1FACF007DA756 /* ChannelVC.swift in Sources */,
 				F0C7FE5423E1FAB3007DA756 /* ChatVC.swift in Sources */,
 				F0E5586023EAE0F700679084 /* AvatarPickerVC.swift in Sources */,
+				F0E5586423EB148000679084 /* CircleImage.swift in Sources */,
 				F0C7FE5A23E25CF0007DA756 /* LoginVC.swift in Sources */,
 				F0EDE2BE23E884D700C79B17 /* AuthService.swift in Sources */,
 				F0C7FE5823E225F1007DA756 /* GradientView.swift in Sources */,
@@ -446,6 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRY23T8ULF;
 				INFOPLIST_FILE = Smack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,6 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRY23T8ULF;
 				INFOPLIST_FILE = Smack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
