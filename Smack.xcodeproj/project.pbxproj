@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A620CD104586811846359B9D /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D87D5AA862893ADEFD46CB9 /* Pods_Smack.framework */; };
+		F06A19A123EC46ED00918D80 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A199F23EC46ED00918D80 /* ProfileVC.swift */; };
+		F06A19A223EC46ED00918D80 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06A19A023EC46ED00918D80 /* ProfileVC.xib */; };
 		F06BFB5D23E9C913005018D3 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06BFB5C23E9C913005018D3 /* UserDataService.swift */; };
 		F0C7FE3A23E1EC9B007DA756 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C7FE3923E1EC9B007DA756 /* AppDelegate.swift */; };
 		F0C7FE3F23E1EC9B007DA756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C7FE3D23E1EC9B007DA756 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		06A080BE6F2AFB72AC4B8872 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		4D87D5AA862893ADEFD46CB9 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC88B26D8E93CC5C06BFD919 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
+		F06A199F23EC46ED00918D80 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		F06A19A023EC46ED00918D80 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		F06BFB5C23E9C913005018D3 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		F0C7FE3623E1EC9B007DA756 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C7FE3923E1EC9B007DA756 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F06A19A323EC470E00918D80 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				F06A19A023EC46ED00918D80 /* ProfileVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		F0C7FE2D23E1EC9B007DA756 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +114,7 @@
 		F0C7FE3823E1EC9B007DA756 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				F06A19A323EC470E00918D80 /* XIBs */,
 				F0EDE2BC23E884B000C79B17 /* Services */,
 				F0EDE2B923E8846200C79B17 /* Utilities */,
 				F0C7FE5223E1FA44007DA756 /* Model */,
@@ -135,6 +148,7 @@
 				F0C7FE5923E25CF0007DA756 /* LoginVC.swift */,
 				F0C7FE5B23E25F4E007DA756 /* CreateAccountVC.swift */,
 				F0E5585F23EAE0F700679084 /* AvatarPickerVC.swift */,
+				F06A199F23EC46ED00918D80 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06A19A223EC46ED00918D80 /* ProfileVC.xib in Resources */,
 				F0C7FE4423E1ECA0007DA756 /* LaunchScreen.storyboard in Resources */,
 				F0C7FE4123E1ECA0007DA756 /* Assets.xcassets in Resources */,
 				F0C7FE3F23E1EC9B007DA756 /* Main.storyboard in Resources */,
@@ -291,6 +306,7 @@
 			files = (
 				F0C7FE5623E1FACF007DA756 /* ChannelVC.swift in Sources */,
 				F0C7FE5423E1FAB3007DA756 /* ChatVC.swift in Sources */,
+				F06A19A123EC46ED00918D80 /* ProfileVC.swift in Sources */,
 				F0E5586023EAE0F700679084 /* AvatarPickerVC.swift in Sources */,
 				F0E5586423EB148000679084 /* CircleImage.swift in Sources */,
 				F0C7FE5A23E25CF0007DA756 /* LoginVC.swift in Sources */,
