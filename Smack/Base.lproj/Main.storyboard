@@ -48,20 +48,20 @@
                                         </constraints>
                                         <state key="normal" title="Button" image="smackBurger"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XE3-x4-NOx">
-                                        <rect key="frame" x="166" y="28" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XE3-x4-NOx">
+                                        <rect key="frame" x="151.5" y="25.5" width="72" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.29019607843137252" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="XE3-x4-NOx" firstAttribute="centerY" secondItem="oAt-lq-kuX" secondAttribute="centerY" id="3j4-Ha-ENb"/>
-                                    <constraint firstItem="XE3-x4-NOx" firstAttribute="centerX" secondItem="nmZ-Ku-J2c" secondAttribute="centerX" id="3vy-Hc-EnK"/>
                                     <constraint firstAttribute="bottom" secondItem="oAt-lq-kuX" secondAttribute="bottom" constant="12" id="5ae-IF-lHn"/>
                                     <constraint firstItem="oAt-lq-kuX" firstAttribute="leading" secondItem="nmZ-Ku-J2c" secondAttribute="leading" constant="12" id="LSM-FE-4ud"/>
                                     <constraint firstAttribute="height" constant="77" id="Nk5-sU-dRw"/>
+                                    <constraint firstItem="XE3-x4-NOx" firstAttribute="centerX" secondItem="nmZ-Ku-J2c" secondAttribute="centerX" id="UQ7-Wn-cbP"/>
+                                    <constraint firstItem="XE3-x4-NOx" firstAttribute="centerY" secondItem="nmZ-Ku-J2c" secondAttribute="centerY" id="scw-7O-cH4"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -258,6 +258,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="FUb-0N-aFy" eventType="touchUpInside" id="ypq-Fs-7Do"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of5-fw-lJt">
                                 <rect key="frame" x="337" y="30" width="28" height="28"/>
@@ -266,13 +269,19 @@
                                     <action selector="closePressed:" destination="FUb-0N-aFy" eventType="touchUpInside" id="mA6-S2-l4C"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ctF-uq-nQp">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.080325525750000001" green="0.21223071969999999" blue="0.83916957489999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ctF-uq-nQp" firstAttribute="centerY" secondItem="Z0l-Vo-ZWc" secondAttribute="centerY" constant="-100" id="2YM-Ch-yUR"/>
                             <constraint firstItem="hxS-0R-DXL" firstAttribute="centerX" secondItem="Z0l-Vo-ZWc" secondAttribute="centerX" id="2eo-z0-dQ5"/>
                             <constraint firstItem="of5-fw-lJt" firstAttribute="top" secondItem="y0h-Ox-WYd" secondAttribute="top" constant="10" id="7BJ-ba-gkX"/>
                             <constraint firstItem="hxS-0R-DXL" firstAttribute="top" secondItem="UKR-GT-6dd" secondAttribute="bottom" constant="40" id="PCu-3G-dTt"/>
                             <constraint firstItem="UKR-GT-6dd" firstAttribute="top" secondItem="y0h-Ox-WYd" secondAttribute="top" constant="60" id="UBQ-0z-P46"/>
+                            <constraint firstItem="ctF-uq-nQp" firstAttribute="centerX" secondItem="Z0l-Vo-ZWc" secondAttribute="centerX" id="UFL-d0-0GA"/>
                             <constraint firstItem="FMt-YY-FQ6" firstAttribute="centerX" secondItem="Z0l-Vo-ZWc" secondAttribute="centerX" id="XWB-wB-tiP"/>
                             <constraint firstItem="UKR-GT-6dd" firstAttribute="centerX" secondItem="Z0l-Vo-ZWc" secondAttribute="centerX" id="h0P-do-Jck"/>
                             <constraint firstItem="y0h-Ox-WYd" firstAttribute="trailing" secondItem="of5-fw-lJt" secondAttribute="trailing" constant="10" id="ieR-dV-EYz"/>
@@ -283,6 +292,9 @@
                         <viewLayoutGuide key="safeArea" id="y0h-Ox-WYd"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="4SS-hK-uNV" id="0OI-q2-5LI"/>
+                        <outlet property="spinner" destination="ctF-uq-nQp" id="kko-OB-M03"/>
+                        <outlet property="usernameTxt" destination="V83-rb-gdf" id="lr8-Nc-35J"/>
                         <segue destination="JIS-J5-dhq" kind="show" identifier="toCreateAccount" id="u6K-FN-rjf"/>
                     </connections>
                 </viewController>
