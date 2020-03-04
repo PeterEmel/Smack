@@ -64,7 +64,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="createActionPressed:" destination="-1" eventType="touchUpInside" id="EDL-rp-AJN"/>
+                                <action selector="createChannelPressed:" destination="-1" eventType="touchUpInside" id="7og-VP-MM5"/>
                             </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="7bV-gm-Tg1">
