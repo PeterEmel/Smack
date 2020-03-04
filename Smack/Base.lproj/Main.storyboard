@@ -104,12 +104,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e20-4n-wFf">
                                 <rect key="frame" x="281" y="83" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelPressed:" destination="UxA-20-loC" eventType="touchUpInside" id="YCJ-7f-Gk0"/>
+                                </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0vG-FG-zpp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0vG-FG-zpp">
                                 <rect key="frame" x="0.0" y="121" width="375" height="431"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ncL-Bq-H3q">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="channelCell" id="ncL-Bq-H3q" customClass="channelCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ncL-Bq-H3q" id="DDy-BR-aoF">
@@ -129,8 +133,15 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="0q1-gY-EmF" id="7ZL-Nb-j0h"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="UxA-20-loC" id="8pG-WZ-GBg"/>
+                                    <outlet property="delegate" destination="UxA-20-loC" id="ne8-mN-EDx"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5s-P4-3pt">
                                 <rect key="frame" x="120" y="593" width="46" height="33"/>
@@ -150,18 +161,16 @@
                         <constraints>
                             <constraint firstItem="zB9-jr-n32" firstAttribute="top" secondItem="JGn-a1-qqi" secondAttribute="top" constant="24" id="Cel-8r-0aT"/>
                             <constraint firstItem="Idd-zz-3AZ" firstAttribute="leading" secondItem="JGn-a1-qqi" secondAttribute="leading" constant="25" id="NaM-AK-L4K"/>
-                            <constraint firstItem="JGn-a1-qqi" firstAttribute="trailing" secondItem="0vG-FG-zpp" secondAttribute="trailing" id="PCy-eh-LSp"/>
                             <constraint firstItem="Idd-zz-3AZ" firstAttribute="top" secondItem="zB9-jr-n32" secondAttribute="bottom" constant="20" id="RD6-f8-yrW"/>
-                            <constraint firstItem="0vG-FG-zpp" firstAttribute="top" secondItem="Idd-zz-3AZ" secondAttribute="bottom" constant="20" id="RIT-4J-V4O"/>
                             <constraint firstItem="zB9-jr-n32" firstAttribute="leading" secondItem="1op-kx-qsf" secondAttribute="leading" constant="25" id="Xoh-Ti-B1t"/>
                             <constraint firstItem="JGn-a1-qqi" firstAttribute="trailing" secondItem="e20-4n-wFf" secondAttribute="trailing" constant="72" id="YZp-Xl-QYc"/>
-                            <constraint firstItem="0vG-FG-zpp" firstAttribute="leading" secondItem="JGn-a1-qqi" secondAttribute="leading" id="eQS-9i-uIm"/>
                             <constraint firstItem="e20-4n-wFf" firstAttribute="centerY" secondItem="Idd-zz-3AZ" secondAttribute="centerY" id="kGk-1m-lYk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JGn-a1-qqi"/>
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="k5s-P4-3pt" id="zpr-OE-EGY"/>
+                        <outlet property="tableView" destination="0vG-FG-zpp" id="a1V-a6-LSk"/>
                         <outlet property="userImage" destination="stR-5y-K9U" id="5nW-GQ-fHt"/>
                         <segue destination="FUb-0N-aFy" kind="show" identifier="toLogin" id="0V9-HQ-kzN"/>
                     </connections>
