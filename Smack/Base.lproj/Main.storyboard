@@ -142,6 +142,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4w-2W-ydJ">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -156,6 +162,8 @@
                             <constraint firstItem="hG7-gQ-ppn" firstAttribute="top" secondItem="nmZ-Ku-J2c" secondAttribute="bottom" id="eUd-xi-plt"/>
                             <constraint firstItem="79y-Go-JHP" firstAttribute="bottom" secondItem="Lsg-jp-sr0" secondAttribute="bottom" id="hzw-Rd-mmm"/>
                             <constraint firstItem="nmZ-Ku-J2c" firstAttribute="trailing" secondItem="79y-Go-JHP" secondAttribute="trailing" id="mdw-iz-XNS"/>
+                            <constraint firstItem="V4w-2W-ydJ" firstAttribute="leading" secondItem="79y-Go-JHP" secondAttribute="leading" constant="8" id="nzU-eK-BVK"/>
+                            <constraint firstItem="Lsg-jp-sr0" firstAttribute="top" secondItem="V4w-2W-ydJ" secondAttribute="bottom" constant="6" id="p4I-pM-t6W"/>
                             <constraint firstItem="hG7-gQ-ppn" firstAttribute="leading" secondItem="79y-Go-JHP" secondAttribute="leading" id="vl8-QV-5So"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="79y-Go-JHP"/>
@@ -166,6 +174,7 @@
                         <outlet property="msgTxtField" destination="Lsg-jp-sr0" id="RKG-lY-9WX"/>
                         <outlet property="sendBtn" destination="XSZ-OA-3TL" id="HKW-LK-hqO"/>
                         <outlet property="tableView" destination="hG7-gQ-ppn" id="Zav-u7-CwQ"/>
+                        <outlet property="typingUsersLbl" destination="V4w-2W-ydJ" id="lCr-2E-iKm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ir3-hn-aYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
